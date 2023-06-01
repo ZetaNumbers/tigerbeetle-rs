@@ -12,10 +12,7 @@ use syn::visit::Visit;
 use zip::ZipArchive;
 
 fn tigerbeetle_zip_url() -> String {
-    format!(
-        "https://github.com/tigerbeetledb/tigerbeetle/archive/refs/tags/{}.zip",
-        std::env::var("CARGO_PKG_VERSION").unwrap()
-    )
+    "https://github.com/ZetaNumbers/tigerbeetle/archive/refs/heads/lock_credit.zip".into()
 }
 
 fn target_to_lib_dir(target: &str) -> Option<&'static str> {
